@@ -5,8 +5,8 @@ const BookList = ({ books, onEdit, onDelete }) => {
     return (
       <div className="text-center py-20 text-gray-400">
         <p className="text-5xl mb-4">📖</p>
-        <p className="text-lg font-medium">Henüz kitap eklenmedi</p>
-        <p className="text-sm mt-1">Yukarıdaki butona tıklayarak ilk kitabını ekle!</p>
+        <p className="text-lg font-medium">Liste boş</p>
+        <p className="text-sm mt-1">Sağ üstten kitap ekleyebilirsin</p>
       </div>
     );
   }

@@ -1,16 +1,46 @@
-# React + Vite
+# Kitap Kütüphanesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web Geliştirme dersim için yaptığım proje. Okuduğum veya okumak istediğim kitapları takip edebildiğim bir uygulama.
 
-Currently, two official plugins are available:
+## Ne Yaptım
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Kitap ekleyip silebiliyorum, bilgilerini güncelleyebiliyorum. Kitaplara durum atayabiliyorum (okundu, okunuyor, okunacak) ve 5 üzerinden puan verebiliyorum. Arama ve filtreleme de var.
 
-## React Compiler
+## Kullandığım Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite ile kurdum)
+- Tailwind CSS
+- localStorage (veriler kaybolmuyor)
 
-## Expanding the ESLint configuration
+## Proje Yapısı
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  Components/    → Navbar, BookCard, BookForm, BookList
+  Pages/         → HomePage
+  Interfaces/    → Book modeli
+```
+
+## Kurulum
+
+```bash
+npm install
+npm run dev
+```
+
+## Özellikler
+
+- Kitap ekleme
+- Kitapları listeleme
+- Kitap güncelleme
+- Kitap silme
+- Arama ve filtreleme (türe, duruma göre)
+- Sıralama
+
+## Canlı Demo
+
+[Netlify linki buraya gelecek]
+
+---
+
+Berke İkikarakayalı

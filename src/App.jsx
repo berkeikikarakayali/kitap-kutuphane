@@ -43,7 +43,7 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    if (window.confirm('Bu kitabı silmek istediğinden emin misin?')) {
+    if (window.confirm('Silmek istediğine emin misin?')) {
       setBooks((prev) => prev.filter((b) => b.id !== id));
     }
   };
@@ -54,9 +54,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-100">
+    <div className="min-h-screen bg-slate-100 flex flex-col">
       <Navbar onAddClick={() => setShowForm(true)} />
-      <HomePage books={books} onEdit={handleEdit} onDelete={handleDelete} />
+      <div className="flex-1">
+        <HomePage books={books} onEdit={handleEdit} onDelete={handleDelete} />
+      </div>
+      <footer className="text-center text-xs text-gray-400 py-4">
+        Berke İkikarakayalı — Web Geliştirme Projesi
+      </footer>
       {showForm && (
         <BookForm
           onSubmit={editingBook ? handleUpdate : handleAdd}
