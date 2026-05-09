@@ -39,7 +39,7 @@ npm run dev
 
 ## Canlı Demo
 
-[Netlify linki buraya gelecek]
+https://kitaptakipapp.netlify.app
 
 ---
 
